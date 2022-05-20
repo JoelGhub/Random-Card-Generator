@@ -1,1 +1,59 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  background-color: green;
+}
+
+.card {
+  background-color: #fff;
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+  margin: 10px auto;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.inner-div {
+  background-color: #fff;
+  width: 100px;
+  font-size: 90px;
+  margin: 0 auto;
+}
+.bottom {
+  transform: rotate(180deg);
+}
+button {
+  background-color: #fff;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 17px;
+  border: 1px solid rgb(169, 180, 5);
+  font-weight: bolder;
+}
+button:hover {
+  background-color: rgb(119, 128, 0);
+  color: #fff;
+}
+ul {
+  margin: 10px;
+}
+ul li {
+  list-style: none;
+  border: 1px solid black;
+  width: 400px;
+  margin: 0 auto;
+  background-color: rgb(119, 128, 0);
+}
+input {
+  width: 200px;
+  margin: 15px;
+  background-color: #fff;
+  border: none;
+}
+label {
+  color: black;
+  background-color: rgb(119, 128, 0);
+}
