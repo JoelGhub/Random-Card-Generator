@@ -21,8 +21,6 @@ window.onload = function() {
     let elem = document.querySelector("#cards");
     carta = icons[Math.floor(Math.random() * 4)];
     array = numbers[Math.floor(Math.random() * 13)];
-    // console.log(array + carta);
-    // console.log(elem);
     elem.innerHTML = `
   <div class="inner-div">${carta}</div>
   <div class="inner-div">${array} </div>
@@ -38,8 +36,6 @@ window.onload = function() {
     let elem = document.querySelector("#cards");
     carta = icons[Math.floor(Math.random() * 4)];
     array = numbers[Math.floor(Math.random() * 13)];
-    // console.log(array + carta);
-    // console.log(elem);
     elem.innerHTML = `
   <div class="inner-div">${carta}</div>
   <div class="inner-div">${array} </div>
