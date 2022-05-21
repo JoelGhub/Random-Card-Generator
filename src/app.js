@@ -21,11 +21,19 @@ window.onload = function() {
     let elem = document.querySelector("#cards");
     carta = icons[Math.floor(Math.random() * 4)];
     array = numbers[Math.floor(Math.random() * 13)];
-    elem.innerHTML = `
-  <div class="inner-div">${carta}</div>
-  <div class="inner-div">${array} </div>
-  <div class="inner-div bottom">${carta}</div>
-  `;
+    if (carta === "♥") {
+      elem.innerHTML = `
+      <div class="inner-div red">${carta}</div>
+      <div class="inner-div">${array} </div>
+      <div class="inner-div bottom red">${carta}</div>
+      `;
+    } else {
+      elem.innerHTML = `
+      <div class="inner-div">${carta}</div>
+      <div class="inner-div">${array} </div>
+      <div class="inner-div bottom">${carta}</div>
+      `;
+    }
   });
 
   /* set 10 secs to change */
@@ -46,7 +54,6 @@ window.onload = function() {
   /* set width and height */
   let button2 = document.querySelector("#set");
   button2.addEventListener("click", function() {
-    let innerdiv = document.querySelector(".card");
     let width = document.querySelector(".width");
     let height = document.querySelector(".height");
     let show = width.value;

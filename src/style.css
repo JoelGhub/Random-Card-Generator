@@ -4,6 +4,9 @@
   background-color: green;
 }
 
+.red {
+  color: red;
+}
 .card {
   background-color: #fff;
   width: 400px;
