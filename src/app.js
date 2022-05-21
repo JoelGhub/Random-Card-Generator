@@ -44,11 +44,19 @@ window.onload = function() {
     let elem = document.querySelector("#cards");
     carta = icons[Math.floor(Math.random() * 4)];
     array = numbers[Math.floor(Math.random() * 13)];
-    elem.innerHTML = `
-  <div class="inner-div">${carta}</div>
-  <div class="inner-div">${array} </div>
-  <div class="inner-div bottom">${carta}</div>
-  `;
+    if (carta === "♥") {
+      elem.innerHTML = `
+      <div class="inner-div red">${carta}</div>
+      <div class="inner-div">${array} </div>
+      <div class="inner-div bottom red">${carta}</div>
+      `;
+    } else {
+      elem.innerHTML = `
+      <div class="inner-div">${carta}</div>
+      <div class="inner-div">${array} </div>
+      <div class="inner-div bottom">${carta}</div>
+      `;
+    }
   }
 
   /* set width and height */
